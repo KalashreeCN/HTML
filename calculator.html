@@ -1,0 +1,55 @@
+<!-- Create sample calculator -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample calculator</title>
+    </head>
+    <style>
+     body{background-color: aqua;}
+     #forms{margin-top:50px;background-color: black; 
+        margin-left:30%; margin-right:30%; padding-bottom:50PX;
+    padding-left:0px; padding-right:0px;
+padding-top: 50px;}
+     #text1,#button{width: 250px; height: 30px;}
+     input{width:80px; height:30px;
+    margin-top:9px; background-color:gray; color:black; padding:2px;}
+    h1,h2{background-color: black; color: white; width:50%; margin-left:0%;
+        font-family: 'Lucida Sans'; }
+    /* #button {width: 250px; height: 30px;} */
+    </style>
+
+<body>
+    <center>
+       <u><b><i> <h1>Sample calculator</h1></i></b></u>
+        <h2>You can Calculate</h2>
+        <hr color="blue">
+        <form name="form" id="forms">
+            <input type="text" name="text" id="text1"><br>
+            <input type="button" value="1" onclick="form.text.value +='1'">
+            <input type="button" value="2" onclick="form.text.value +='2'">
+            <input type="button" value="3" onclick="form.text.value +='3'">
+            <br>
+            <input type="button" value="4" onclick="form.text.value +='4'">
+            <input type="button" value="5" onclick="form.text.value +='5'">
+            <input type="button" value="6" onclick="form.text.value +='6'">
+            <br>
+            <input type="button" value="7" onclick="form.text.value +='7'">
+            <input type="button" value="8" onclick="form.text.value +='8'">
+            <input type="button" value="9" onclick="form.text.value +='9'">
+            <br>
+            <input type="button" value="+" onclick="form.text.value +='+'">
+            <input type="button" value="-" onclick="form.text.value +='-'">
+            <input type="button" value="/" onclick="form.text.value +='/'">
+            <br>
+            <input type="button" value="0" onclick="form.text.value +='0'">
+            <input type="button" value="*" onclick="form.text.value +='*'">
+            <input type="button" value="="
+             onclick="form.text.value =eval(form.text.value)">
+            <br>
+            <input type="button" value="AC" id="button" 
+            onclick="form.text.value=' '">
+            <div>
+             </form>
+            </center>
+</body>
+</html> 
